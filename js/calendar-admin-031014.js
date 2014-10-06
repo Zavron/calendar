@@ -73,8 +73,8 @@ var previewclick=function(event) {
 var ajaxpreview=function() {
 	$.ajax({
 		type: "POST",
-		url: "ajax.php?action=preview",
-		data: {content: area.html(), title: $('input[name=title]').val()},
+		url: "ajax.php",
+		data: {action: 'preview', content: area.val(), title: $('input[name=title]').val()},
 		cache: false
 	})
 	.done(function(data) {

@@ -8,7 +8,7 @@ include './php/functions_ajax.php';
 db_connect();
 date_default_timezone_set($cfg['prop_time_default']);
 
-$action = (isset($_GET['action']))?$_GET['action']:'';
+$action = (isset($_GET['action']))?$_GET['action']:(isset($_POST['action'])?$_POST['action']:'');
 $day = (isset($_GET['day']))?db_escape($_GET['day']):-1;
 
 if($action=='show') {
