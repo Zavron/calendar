@@ -10,4 +10,3 @@ extension called 'maphighlight.js'. For details see the license or
 visit him over at 'http://davidlynch.org'.
 The user frontend works even without javascript, the admin backend
 does require javascript.
-For any questions, feedback or improvements, contact: zavron.gm@gmail.com
