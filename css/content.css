@@ -1,0 +1,45 @@
+.title {
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+.i {
+	font-style: italic;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.fleft {
+	float: left;
+}
+
+.fcenter {
+	float: center;
+}
+
+.fright {
+	float: right;
+}
+
+.delim {
+	clear: both;
+}

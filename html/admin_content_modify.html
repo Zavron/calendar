@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title><?php echo $cfg['str_admin']; ?> - Eintrag bearbeiten</title>
+		<link rel="stylesheet" type="text/css" href="css/admin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="<?php echo $cfg['path_script-admin'];?>"></script>		
+	</head>
+	<body>
+		<form method="post">
+			<input type="hidden" name="do" value="1"/>
+			<?php echo $cfg['str_day'];?>:<br/>
+			<input type="text" name="day" value="<?php echo $day;?>"/><br/>
+			<?php echo $cfg['str_unlock'];?>:<br/>
+			<input type="text" name="unlock_day" size="2" maxlength="2" value="<?php echo $unlock_day; ?>"/>.<input type="text" name="unlock_month" size="2" maxlength="2" value="<?php echo $unlock_month;?>"/>.<input type="text" name="unlock_year" size="4" maxlength="4" value="<?php echo $unlock_year;?>"/> (Tag.Monat.Jahr)<br/>
+			<input type="text" name="unlock_hour" size="2" maxlength="2" value="<?php echo $unlock_hour;?>"/>:<input type="text" name="unlock_min" size="2" maxlength="2" value="<?php echo $unlock_min;?>"/> (Stunden:Minuten)<br/>
+			<?php echo $cfg['str_hl'];?>:<br/>
+			<input type="text" name="title" value="<?php echo $title;?>"/><br/>
+			<?php echo $cfg['str_text'];?>:<br/>
+			<button class="b_editor" shortcut="url"><img src="img/url.png"></button>
+			<button class="b_editor" shortcut="u"><img src="img/u.png"></button>
+			<button class="b_editor" shortcut="i"><img src="img/i.png"></button>
+			<button class="b_editor" shortcut="b"><img src="img/b.png"></button>
+			<button class="b_editor" shortcut="left"><img src="img/left.png"></button>
+			<button class="b_editor" shortcut="center"><img src="img/center.png"></button>
+			<button class="b_editor" shortcut="right"><img src="img/right.png"></button>
+			<button class="b_editor" shortcut="youtube"><img src="img/youtube.png"></button>
+			<br/>
+			<button class="b_editor" shortcut="img"><img src="img/img.png"/></button>
+			<button class="b_editor" shortcut="limg"><img src="img/limg.png"/></button>
+			<button class="b_editor" shortcut="rimg"><img src="img/rimg.png"/></button>
+			<button class="b_editor" shortcut="delim"><img src="img/delim.png"/></button>
+			<br/>
+			<div id="wrap_preview">
+				<?php echo $cfg['str_preview']; echo "\n";?>
+				<div id="preview">				
+				</div>
+				<button id="b_hide"><?php echo $cfg['str_hide'];?></button>
+				<br/>
+			</div>
+			<textarea id="area" name="text" rows="25" cols="100"><?php echo $text;?></textarea><br/>
+			<br/>
+			<button id="b_preview"><?php echo $cfg['str_preview'];?></button>
+			<br/>
+			<br/>
+			<input type="Submit" name="<?php echo $cfg['str_submit'];?>">
+			<input class="space_left" type="Reset" name="<?php echo $cfg['str_reset'];?>">
+		</form>
+		<br/>
+		<a href="?action=content&amp;view=home"><?php echo $cfg['str_back'];?></a>
+	</body>
+</html>

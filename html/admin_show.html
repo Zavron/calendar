@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title><?php echo $cfg['str_title'];?></title>
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
+	</head>
+	<body>
+		<div style="font-size: 22px; color: red;">
+			<?php echo $cfg['str_admin']." - Gesperrte Ansicht - Entsperrt: "; echo $result->Time; ?>
+
+			<br/><br/>
+		</div>
+		<div class="title">
+			<?php echo $title; ?>
+			
+		</div>
+		<br>
+		<?php echo $text;?>
+	</body>
+</html>

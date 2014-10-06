@@ -1,0 +1,27 @@
+.center {
+	text-align: center;
+}
+
+.space_left {
+	margin-left: 20px;
+}
+
+.table {
+	border: 1px solid black;
+}
+
+.b_editor{
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+#wrap_preview {
+	display: none;
+}
+
+#preview {
+	border: 1px solid blue;
+	overflow-y: scroll;
+	height:400px;
+}

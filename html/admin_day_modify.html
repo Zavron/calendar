@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title><?php echo $cfg['str_admin'];?> - Feld bearbeiten</title>
+		<link rel="stylesheet" type="text/css" href="css/admin.css"/>
+	</head>
+	<body>
+		<form method="post">
+			<input type="hidden" name="do" value="1"/>
+			<?php echo $cfg['str_day'];?>:<br/>
+			<input type="text" name="day" value="<?php echo $day; ?>"/><br/>
+			<?php echo $cfg['str_top_x'];?>:<br/>
+			<input type="text" name="top_x" value="<?php echo $top_x; ?>"/><br/>
+			<?php echo $cfg['str_top_y'];?>:<br/>
+			<input type="text" name="top_y" value="<?php echo $top_y; ?>"/><br/>
+			<?php echo $cfg['str_bot_x'];?>:<br/>
+			<input type="text" name="bot_x" value="<?php echo $bot_x; ?>"/><br/>
+			<?php echo $cfg['str_bot_y'];?>:<br/>
+			<input type="text" name="bot_y" value="<?php echo $bot_y; ?>"/><br/>
+			<br/>
+			<input type="Submit" name="<?php echo $cfg['str_submit'];?>">
+			<input class="space_left" type="Reset" name="<?php echo $cfg['str_reset'];?>">
+		</form>
+		<br/>
+		<a href="?action=day&amp;view=home"><?php echo $cfg['str_back'];?></a>
+	</body>
+</html>
