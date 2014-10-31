@@ -5,7 +5,7 @@ $cfg['mode_dev'] = false;
 $cfg['mode_admin'] = true;
 
 /* The Page's HTML Title*/
-$cfg['str_title'] = "Adventskalender 2014";
+$cfg['str_title'] = "Seitentitel";
 /* The message shown if access was denied (too early or not available) */
 $cfg['str_notyet'] = "Noch ist es nicht soweit, habe noch etwas Geduld!";
 /* The message shown if an error occured during content load */
