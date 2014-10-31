@@ -15,5 +15,9 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
 	</head>
 	<body>
+		<script type="text/javascript">
+			var pop_w = <?php echo $cfg['prop_pop_w']; ?>;
+			var pop_h = <?php echo $cfg['prop_pop_h']; ?>;
+		</script>
 		<img id="bg" class="map" width="<?php echo $cfg['prop_img_w']; ?>" height="<?php echo $cfg['prop_img_h']; ?>" src="<?php echo $cfg['path_img_bg']; ?>" usemap="#map"/>
 		<map name="map">

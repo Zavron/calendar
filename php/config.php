@@ -5,7 +5,7 @@ $cfg['mode_dev'] = false;
 $cfg['mode_admin'] = true;
 
 /* The Page's HTML Title*/
-$cfg['str_title'] = "Seitentitel";
+$cfg['str_title'] = "Adventskalender 2014";
 /* The message shown if access was denied (too early or not available) */
 $cfg['str_notyet'] = "Noch ist es nicht soweit, habe noch etwas Geduld!";
 /* The message shown if an error occured during content load */
@@ -27,7 +27,7 @@ $cfg['str_back'] = "Zur&uuml;ck";
 /* The string for any preview form */
 $cfg['str_preview'] = "Vorschau";
 /* The string for any hide form */
-$cfg['str_hide'] = "Verbergen";
+$cfg['str_hide'] = "Ausblenden";
 /* The string for "Day" values */
 $cfg['str_day'] = "Tag";
 /* The string for "Top X" values */
@@ -70,7 +70,7 @@ $cfg['str_admin_day_error_fill'] = "Bitte alle Felder mit g&uuml;ltigen Werten f
 $cfg['str_admin_content_delete'] = "Eintrag f&uuml;r Tag !! wirklich l&ouml;schen?";
 
 /* Path to background image */
-$cfg['path_img_bg'] = 'img/background.png';
+$cfg['path_img_bg'] = 'img/background.jpg';
 /* Path to error image */
 $cfg['path_img_error'] = 'img/error.png';
 /* Path to access denied image (too early or not available) */
@@ -83,9 +83,13 @@ $cfg['path_script-dev'] ='js/calendar-dev-041014.js';
 $cfg['path_script-admin'] = 'js/calendar-admin-031014.js';
 
 /* Image Width property (in px) */
-$cfg['prop_img_w'] = 720;
+$cfg['prop_img_w'] = 700;
 /* Image Height property (in px) */
-$cfg['prop_img_h'] = 600;
+$cfg['prop_img_h'] = 450;
+/* Popup Width property (in px) */
+$cfg['prop_pop_w'] = 700;
+/* Popup Height property (in px) */
+$cfg['prop_pop_h'] = 600;
 /* Minimum allowed input for 'Month' property */
 $cfg['prop_date_month_min'] = 1;
 /* Maximum allowed input for 'Month' property */

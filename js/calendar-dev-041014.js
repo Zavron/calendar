@@ -49,8 +49,8 @@ $(document).ready(function() {
 		resizeable: false,
 		draggable: false,
 		position: {of: '.map'},
-		width: $('#bg').attr('width'),
-		height: $('#bg').attr('height'),
+		width: pop_w,
+		height: pop_h,
 		buttons: [
 		{
 			text: unescape("Schlie%DFen"),
