@@ -33,7 +33,7 @@ function admin_print_content_row($day, $time, $title, $show_edit, $show_delete) 
 	echo "\t\t\t<tr>\n";
 	echo "\t\t\t\t<td class=\"table\">".$day."</td>\n";
 	echo "\t\t\t\t<td class=\"table\">".$time."</td>\n";
-	echo "\t\t\t\t<td class=\"table\"><a target=\"_blank\" href=\"ajax.php?action=show&amp;day=".$day."\">".$title."</a></td>\n";
+	echo "\t\t\t\t<td class=\"table\"><a target=\"_blank\" href=\"show.php?day=".$day."\">".$title."</a></td>\n";
 	echo "\t\t\t\t<td>".(($show_edit)?"<a href=\"?action=content&amp;view=edit&amp;day=".$day."\"><img src=\"img/edit.png\" alt=\"Bearbeiten\"></a>":"")."</td>\n";
 	echo "\t\t\t\t<td>".(($show_delete)?"<a href=\"?action=content&amp;view=delete&amp;day=".$day."\"><img src=\"img/remove.png\" alt=\"L&ouml;schen\"></a>":"")."</td>\n";
 	echo "\t\t\t</tr>\n";
